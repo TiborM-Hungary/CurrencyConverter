@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="350.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControllerConverter">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" style="-fx-background-color: #556B2F;" VBox.vgrow="ALWAYS">
+      <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="50.0" layoutY="52.0" prefHeight="59.0" prefWidth="213.0" style="-fx-background-color: #A9A9A9;" text="From Currency" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="comboBoxFromCurrency" layoutX="82.0" layoutY="246.0" nodeOrientation="RIGHT_TO_LEFT" prefWidth="150.0" />
+            <TextField fx:id="textFieldEnteredAmount" alignment="CENTER_RIGHT" layoutX="50.0" layoutY="171.0" prefHeight="25.0" prefWidth="213.0" />
+            <Label fx:id="labelResult" alignment="CENTER" layoutX="379.0" layoutY="154.0" prefHeight="59.0" prefWidth="213.0" style="-fx-background-color: #A9A9A9;">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="379.0" layoutY="52.0" prefHeight="59.0" prefWidth="213.0" style="-fx-background-color: #A9A9A9;" text="To HUF" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="126.0" layoutY="298.0" prefHeight="38.0" prefWidth="388.0" text="Currency Converter - TiborM-Hungary" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="buttonConvert" layoutX="411.0" layoutY="246.0" mnemonicParsing="false" onAction="#convert" prefHeight="25.0" prefWidth="150.0" text="Press to convert">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>
